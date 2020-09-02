@@ -1,0 +1,97 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript practice</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <!-- Challenge 1: Your Age in Days -->
+    <div class="container-1">
+        <h1>Challenge 1: Your Age in Days</h1>
+        <div class="flexbox_container-1">
+            <div>
+                <button class="btn btn-primary" onclick="days()">Click me</button>
+            </div>
+
+            <div>
+                <button class="btn btn-danger" onclick="reset()">Reset</button>
+            </div>
+        </div>
+        <div class="flexbox_container-1">
+            <div id="flexbox-result"></div>
+        </div>
+    </div>
+  <!-- Challenge 2: Rock,Paper,Scissors -->
+    <div class="container-3">
+        <h1>Challenge 2: Rock,Paper,Scissors</h1>
+        <div class="flex-box-rps" id="flex-box-rps-div">
+            <img id="rock" src="https://img.etimg.com/thumb/msid-75484104,width-1200,height-900,imgsize-922559,overlay-etpanache/photo.jpg" alt="" height="150" width="180" onclick="rpsGame(this)">
+            <img id="paper" src="https://paper-media.com/media/image/product/3899/md/bse-4032_motif-letter-paper-set-parchment~2.jpg" alt="" height="150" width="180" onclick="rpsGame(this)">
+            <img id="scissors" src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTKXXC4n4--7SfX9nIUWbsln_2d1ovHqkl5SSvjDTwMveQv-twz&usqp=CAU" alt="" height="150" width="180" onclick="rpsGame(this)">
+        </div>
+    </div>
+    <!-- Challenge 3: Change the Color of All Buttons! -->
+    <div class="container-4">
+        <h1>Callenge 3: Change the Color of All Buttons!</h1>
+        <div class="flex-box-pick-color" id="pick-color">
+           <form action="">
+               <select id="background" name="backdrop" onchange="buttonchangeColor(this)">
+                   <option value="random">Random</option>
+                   <option value="red">Red</option>
+                   <option value="green">Green</option>
+                   <option value="reset">Reset</option>
+               </select>
+           </form> 
+           <button class="btn btn-primary">Wee!</button>
+           <button class="btn btn-danger">Yahoo!</button>
+           <button class="btn btn-warning">Google!</button>
+           <button class="btn btn-success">Facebook!</button>
+        </div>
+    </div>
+
+    <!-- Challenge 4: Blackjack -->
+    <div class="container-5">
+        <h2>Challenge 4: Blackjack</h2>
+        <h3><span id="blackjack-result">Let's Play</span></h3>
+
+        <div class="flex-blackjack-row-1">
+            <div id="your-box">
+                <h2>You: <span id="your-blackjack-result">0</span></h2>
+            </div>
+
+        <div id="dealer-box">
+            <h2>Dealer: <span id="dealer-blackjack-result">0</span></h2>
+        </div>
+
+        </div>
+
+        <div class="flex-blackjack-row-2">
+            <div>
+                <button class="btn btn-primary btn-lg mr-2" id="blackjack-hit-button">Hit</button>
+                <button class="btn btn-warning btn-lg mr-2" id="blackjack-stand-button">Stand</button>
+                <button class="btn btn-danger btn-lg" id="blackjack-deal-button">Deal</button>
+            </div>
+        </div>
+
+        <div class="flex-blackjack-row-3">
+            <table>
+                <tr>
+                    <th>Wins</th>
+                    <th>Loses</th>
+                    <th>Draws</th>
+                </tr>
+
+                <tr>
+                    <td><span id="wins">0</span></td>
+                    <td><span id="loses">0</span></td>
+                    <td><span id="draws">0</span></td>
+                </tr>
+            </table>
+        </div>
+    </div>
+
+    <script type="text/javascript" src="script.js"></script>
+</body>
+</html>
